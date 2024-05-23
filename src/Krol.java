@@ -1,4 +1,5 @@
 class Krol extends Figura {
+    private boolean czyRuszony = false;
     public Krol(String kolor) {
         super(kolor);
         if (kolor == "bialy") {
@@ -12,10 +13,18 @@ class Krol extends Figura {
             int deltaY = Math.abs(startowa.getY() - docelowa.getY());
             // Król może poruszać się o jedno pole w dowolnym kierunku
             if (deltaX <= 1 && deltaY <= 1) {
+                setCzyRuszony(true);
                 return true;
             }
         }
         return false;
     }
 
+    public boolean isCzyRuszony() {
+        return czyRuszony;
+    }
+
+    public void setCzyRuszony(boolean czyRuszony) {
+        this.czyRuszony = czyRuszony;
+    }
 }
