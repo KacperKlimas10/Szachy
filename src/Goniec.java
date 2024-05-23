@@ -2,15 +2,15 @@ class Goniec extends Figura {
     public Goniec(String kolor) {
         super(kolor);
         if (kolor == "bialy") {
-            setSymbol("♝");
-        } else setSymbol("♗");
+            setSymbol('♝');
+        } else setSymbol('♗');
     }
     @Override
     public boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz) {
         if (aktualnygracz.getKolor() == "bialy" && this.getKolor() == "bialy") {
-            // Sprawdź czy ruch jest po skosie
+            // czy ruch jest po skosie
             if (Math.abs(docelowa.getX() - startowa.getX()) == Math.abs(docelowa.getY() - startowa.getY())) {
-                // Sprawdź czy na drodze gońca nie ma innych figur
+                // czy na drodze gońca nie ma innych figur
                 int dirX = (docelowa.getX() - startowa.getX()) > 0 ? 1 : -1;
                 int dirY = (docelowa.getY() - startowa.getY()) > 0 ? 1 : -1;
                 int x = startowa.getX() + dirX;
@@ -25,11 +25,11 @@ class Goniec extends Figura {
                 return true; // Ruch jest poprawny dla gońca
             }
         }
-        // Analogicznie dla czarnego gońca
+        // dla czarnego gońca
         else if (aktualnygracz.getKolor() == "czarny" && this.getKolor() == "czarny") {
-            // Sprawdź czy ruch jest po skosie
+            // czy ruch jest po skosie
             if (Math.abs(docelowa.getX() - startowa.getX()) == Math.abs(docelowa.getY() - startowa.getY())) {
-                // Sprawdź czy na drodze gońca nie ma innych figur
+                // czy na drodze gońca nie ma innych figur
                 int dirX = (docelowa.getX() - startowa.getX()) > 0 ? 1 : -1;
                 int dirY = (docelowa.getY() - startowa.getY()) > 0 ? 1 : -1;
                 int x = startowa.getX() + dirX;

@@ -4,7 +4,7 @@ class Plansza {
     public void inicjalizujPlansze() {
         pola = new Pole[8][8];
 
-        // Inicjalizacja pionków i innych figur
+        // Inicjalizacja pionków
         for (int i = 0; i < 8; i++) {
             pola[1][i] = new Pole(new Pionek("bialy"), new Pozycja(1, i));
             pola[6][i] = new Pole(new Pionek("czarny"), new Pozycja(6, i));

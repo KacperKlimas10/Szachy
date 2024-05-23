@@ -3,8 +3,8 @@ class Wieza extends Figura {
     public Wieza(String kolor) {
         super(kolor);
         if (kolor == "bialy") {
-            setSymbol("♜");
-        } else setSymbol("♖");
+            setSymbol('♜');
+        } else setSymbol('♖');
     }
     @Override
     public boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz) {

@@ -2,8 +2,8 @@ class Skoczek extends Figura {
     public Skoczek(String kolor) {
         super(kolor);
         if (kolor == "bialy") {
-            setSymbol("♞");
-        } else setSymbol("♘");
+            setSymbol('♞');
+        } else setSymbol('♘');
     }
     @Override
     public boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz) {

@@ -48,6 +48,8 @@ public class Szachy {
         return false;
     }
     public void zmienGracza() {
-        aktualnyGracz = (aktualnyGracz == bialyGracz) ? czarnyGracz : bialyGracz;
+        if (aktualnyGracz == bialyGracz) {
+            aktualnyGracz = czarnyGracz;
+        } else aktualnyGracz = bialyGracz;
     }
 }

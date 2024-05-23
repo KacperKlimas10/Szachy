@@ -1,5 +1,5 @@
 abstract class Figura {
-    private String symbol;
+    private char symbol;
     private String kolor;
 
     public Figura(String kolor) {
@@ -7,7 +7,7 @@ abstract class Figura {
         this.kolor = kolor;
     }
 
-    public String getSymbol() {
+    public char getSymbol() {
         return symbol;
     }
 
@@ -15,7 +15,7 @@ abstract class Figura {
         return kolor;
     }
 
-    public void setSymbol(String symbol) {
+    public void setSymbol(char symbol) {
         this.symbol = symbol;
     }
 
