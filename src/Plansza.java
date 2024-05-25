@@ -21,8 +21,8 @@ class Plansza {
         pola[0][0] = new Pole(new Wieza("bialy"), new Pozycja(0, 0));
         pola[0][1] = new Pole(new Skoczek("bialy"), new Pozycja(0, 1));
         pola[0][2] = new Pole(new Goniec("bialy"), new Pozycja(0, 2));
-        pola[0][3] = new Pole(new Krolowa("bialy"), new Pozycja(0, 3));
-        pola[0][4] = new Pole(new Krol("bialy"), new Pozycja(0, 4));
+        pola[0][3] = new Pole(new Krol("bialy"), new Pozycja(0, 3));
+        pola[0][4] = new Pole(new Krolowa("bialy"), new Pozycja(0, 4));
         pola[0][5] = new Pole(new Goniec("bialy"), new Pozycja(0, 5));
         pola[0][6] = new Pole(new Skoczek("bialy"), new Pozycja(0, 6));
         pola[0][7] = new Pole(new Wieza("bialy"), new Pozycja(0, 7));
@@ -31,8 +31,8 @@ class Plansza {
         pola[7][0] = new Pole(new Wieza("czarny"), new Pozycja(7, 0));
         pola[7][1] = new Pole(new Skoczek("czarny"), new Pozycja(7, 1));
         pola[7][2] = new Pole(new Goniec("czarny"), new Pozycja(7, 2));
-        pola[7][3] = new Pole(new Krolowa("czarny"), new Pozycja(7, 3));
-        pola[7][4] = new Pole(new Krol("czarny"), new Pozycja(7, 4));
+        pola[7][3] = new Pole(new Krol("czarny"), new Pozycja(7, 3));
+        pola[7][4] = new Pole(new Krolowa("czarny"), new Pozycja(7, 4));
         pola[7][5] = new Pole(new Goniec("czarny"), new Pozycja(7, 5));
         pola[7][6] = new Pole(new Skoczek("czarny"), new Pozycja(7, 6));
         pola[7][7] = new Pole(new Wieza("czarny"), new Pozycja(7, 7));

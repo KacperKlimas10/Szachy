@@ -11,17 +11,19 @@ class Wieza extends Figura {
         if (aktualnygracz.getKolor() == this.getKolor()) {
             // Ruch wieży jest możliwy tylko wzdłuż wiersza lub kolumny
             if (startowa.getX() == docelowa.getX() || startowa.getY() == docelowa.getY()) {
-                setCzyRuszony(true);
+                this.setCzyRuszony(true);
                 return true;
             }
         }
         return false;
     }
 
-    public boolean isCzyRuszony() {
+    @Override
+    public boolean CzyRuszony() {
         return czyRuszony;
     }
 
+    @Override
     public void setCzyRuszony(boolean czyRuszony) {
         this.czyRuszony = czyRuszony;
     }

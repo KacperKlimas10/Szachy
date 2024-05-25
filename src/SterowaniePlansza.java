@@ -23,6 +23,7 @@ class SterowaniePlansza {
             System.out.println(plansza);
         } else {
             System.out.println("Błąd: Niepoprawny ruch!");
+            System.out.println(plansza);
         }
     }
 }
