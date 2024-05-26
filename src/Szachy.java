@@ -44,7 +44,6 @@ public class Szachy {
         System.out.println("Koniec gry.");
     }
     public boolean czyKoniecGry() {
-        // Jezeli szach mat to koniec.
         return false;
     }
     public void zmienGracza() {

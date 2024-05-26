@@ -24,5 +24,4 @@ class SterowaniePlansza {
             System.out.println(plansza);
         }
     }
-
 }

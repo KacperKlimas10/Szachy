@@ -2,14 +2,14 @@ class Wieza extends Figura {
     private boolean czyRuszony = false;
     public Wieza(String kolor) {
         super(kolor);
-        if (kolor == "bialy") {
+        if (kolor.equals("bialy")) {
             setSymbol('♜');
         } else setSymbol('♖');
     }
 
     @Override
     public boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz) {
-        if (!(aktualnygracz.getKolor() == this.getKolor())) {
+        if (!(aktualnygracz.getKolor().equals(this.getKolor()))) {
             return false;
         }
         // Ruch wieży jest możliwy tylko wzdłuż wiersza lub kolumny
@@ -42,7 +42,7 @@ class Wieza extends Figura {
         }
 
         Figura figuraDocelowa = plansza.getPola(docelowa.getX(), docelowa.getY()).getFigura();
-        if (figuraDocelowa != null && figuraDocelowa.getKolor() == this.getKolor()) { // Sprawdza czy na polu docelowym znajduje figura tego samego koloru
+        if (figuraDocelowa != null && figuraDocelowa.getKolor().equals(this.getKolor())) { // Sprawdza czy na polu docelowym znajduje figura tego samego koloru
             return false;
         }
         return true;

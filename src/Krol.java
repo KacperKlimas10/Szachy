@@ -2,13 +2,13 @@ class Krol extends Figura {
     boolean czyRuszony = false;
     public Krol(String kolor) {
         super(kolor);
-        if (kolor == "bialy") {
+        if (kolor.equals("bialy")) {
             setSymbol('♚');
         } else setSymbol('♔');
     }
     @Override
     public boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz) {
-        if (aktualnygracz.getKolor() == this.getKolor()) {
+        if (aktualnygracz.getKolor().equals(this.getKolor())) {
             int deltaX = Math.abs(startowa.getX() - docelowa.getX());
             int deltaY = Math.abs(startowa.getY() - docelowa.getY());
             // Król może poruszać się o jedno pole w dowolnym kierunku
@@ -36,7 +36,7 @@ class Krol extends Figura {
 
     private boolean dlugaRoszada(Plansza plansza) {
         if (!this.CzyRuszony()) {
-            if (this.getKolor() == "bialy") {
+            if (this.getKolor().equals("bialy")) {
                 if (!plansza.getPola(0, 7).getFigura().CzyRuszony()) {
                     for (int i = 4; i <= 6; i++) {
                         if (plansza.getPola(0, i).getFigura() != null) {
@@ -66,9 +66,9 @@ class Krol extends Figura {
         }
         return false;
     }
-    public boolean krotkaRoszada(Plansza plansza) {
+    private boolean krotkaRoszada(Plansza plansza) {
         if (!this.CzyRuszony()) {
-            if (this.getKolor() == "bialy") {
+            if (this.getKolor().equals("bialy")) {
                 if (!plansza.getPola(0, 0).getFigura().CzyRuszony()) {
                     for (int i = 1; i <= 2; i++) {
                         if (plansza.getPola(0, i).getFigura() != null) {
