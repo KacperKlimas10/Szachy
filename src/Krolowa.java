@@ -16,5 +16,4 @@ class Krolowa extends Figura {
         }
         return false;
     }
-
 }

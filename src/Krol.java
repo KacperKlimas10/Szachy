@@ -34,7 +34,7 @@ class Krol extends Figura {
         this.czyRuszony = czyRuszony;
     }
 
-    public boolean dlugaRoszada(Plansza plansza) {
+    private boolean dlugaRoszada(Plansza plansza) {
         if (!this.CzyRuszony()) {
             if (this.getKolor() == "bialy") {
                 if (!plansza.getPola(0, 7).getFigura().CzyRuszony()) {

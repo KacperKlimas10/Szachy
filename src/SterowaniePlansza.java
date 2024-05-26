@@ -12,9 +12,7 @@ class SterowaniePlansza {
 
         if (!startowePole.czyZajete()) {
             System.out.println("Błąd: Pole startowe jest puste!");
-            return;
         }
-
         Figura figura = startowePole.getFigura();
         if (figura.czyPoprawnyRuch(startowa, docelowa, plansza, aktualnygracz)) {
             docelowePole.setFigura(figura);
@@ -26,4 +24,5 @@ class SterowaniePlansza {
             System.out.println(plansza);
         }
     }
+
 }
