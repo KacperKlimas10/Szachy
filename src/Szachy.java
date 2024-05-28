@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Szachy {
-    private Plansza plansza;
-    private Gracz bialyGracz;
-    private Gracz czarnyGracz;
+    private final Plansza plansza;
+    private final Gracz bialyGracz;
+    private final Gracz czarnyGracz;
     private Gracz aktualnyGracz;
 
     public Szachy() {

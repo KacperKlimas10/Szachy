@@ -1,6 +1,6 @@
 abstract class Figura {
     private char symbol;
-    private String kolor;
+    private final String kolor;
     private boolean czyRuszony = false;
 
     public Figura(String kolor) {
@@ -18,10 +18,6 @@ abstract class Figura {
 
     public void setSymbol(char symbol) {
         this.symbol = symbol;
-    }
-
-    public void setKolor(String kolor) {
-        this.kolor = kolor;
     }
 
     public abstract boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz);

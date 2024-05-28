@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 class Krolowa extends Figura {
     public Krolowa(String kolor) {
         super(kolor);
@@ -58,7 +60,7 @@ class Krolowa extends Figura {
         }
 
         Figura figuraDocelowa = plansza.getPola(docelowa.getX(), docelowa.getY()).getFigura();
-        if (figuraDocelowa != null && figuraDocelowa.getKolor() == this.getKolor()) { // Sprawdza czy na polu docelowym znajduje figura tego samego koloru
+        if (figuraDocelowa != null && Objects.equals(figuraDocelowa.getKolor(), this.getKolor())) { // Sprawdza czy na polu docelowym znajduje figura tego samego koloru
             return false;
         }
         return true;

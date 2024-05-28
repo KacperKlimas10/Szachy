@@ -1,5 +1,5 @@
 class SterowaniePlansza {
-    private Plansza plansza;
+    private final Plansza plansza;
 
     public SterowaniePlansza() {
         plansza = new Plansza();

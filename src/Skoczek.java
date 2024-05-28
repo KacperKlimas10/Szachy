@@ -7,7 +7,7 @@ class Skoczek extends Figura {
     }
     @Override
     public boolean czyPoprawnyRuch(Pozycja startowa, Pozycja docelowa, Plansza plansza, Gracz aktualnygracz) {
-        if (aktualnygracz.getKolor().equals(this.getKolor())) {
+        if (this.getKolor().equals(aktualnygracz.getKolor())) {
             int deltaX = Math.abs(startowa.getX() - docelowa.getX());
             int deltaY = Math.abs(startowa.getY() - docelowa.getY());
             // Skoczek może przeskoczyć na pole, które jest w kształcie litery "L" (deltaX * deltaY == 2)

@@ -1,6 +1,6 @@
 class Pole {
     private Figura figura;
-    private Pozycja pozycja;
+    private final Pozycja pozycja;
 
     public Pole(Figura figura, Pozycja pozycja) {
         this.figura = figura;

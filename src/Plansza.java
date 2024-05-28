@@ -42,10 +42,6 @@ class Plansza {
         return pola[x][y];
     }
 
-    public void setPola(int x, int y, Figura figura) {
-        pola[x][y].setFigura(figura);
-    }
-
     public String toString() {
         StringBuilder plansza = new StringBuilder();
         plansza.append("  0   1   2   3   4   5   6   7 \n");
@@ -53,7 +49,7 @@ class Plansza {
             plansza.append(i).append(" ");
             for (int j = 0; j < 8; j++) {
                 if (pola[i][j].getFigura() == null) {
-                    plansza.append(" ◻\uFE0E ");
+                    plansza.append(" ◻︎ ");
                 } else {
                     plansza.append(pola[i][j].getFigura().getSymbol()).append("  ");
                 }
